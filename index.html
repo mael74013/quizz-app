@@ -3,64 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Application de Gestion</title>
+    <title>Quiz Master - Le Jeu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Application De Quizz</h1>
+            <h1>Quiz Game</h1>
         </header>
+
         <main id="app-content">
             <section id="form-section">
-    <h2>Configuration de la session</h2>
-    <form id="quiz-setup-form">
-        <div class="form-group">
-            <label for="username">Nom de l'utilisateur :</label>
-            <input type="text" id="username" placeholder="Ex: Jean Dupont" required>
-        </div>
+                <h2>Configuration</h2>
+                <form id="quiz-setup-form">
+                    <div class="form-group">
+                        <label for="username">Nom :</label>
+                        <input type="text" id="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="level">Niveau :</label>
+                        <select id="level" required>
+                            <option value="easy">Débutant</option>
+                            <option value="medium">Intermédiaire</option>
+                            <option value="hard">Avancé</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="theme">Thème :</label>
+                        <select id="theme" required>
+                            <option value="9">Culture Générale</option>
+                            <option value="18">Informatique</option>
+                            <option value="22">Géographie</option>
+                        </select>
+                    </div>
+                    <button type="submit">Lancer la session</button>
+                </form>
+            </section>
+        </main>
 
-        <div class="form-group">
-    <label for="level">Niveau de difficulté :</label>
-    <select id="level" required>
-        <option value="">--Choisissez un niveau--</option>
-        <option value="debutant">Débutant</option>
-        <option value="intermediaire">Intermédiaire</option>
-        <option value="avance">Avancé</option>
-    </select>
-</div>
+        <section id="display-section" style="display:none;">
+            <div class="score-zone">
+                <h4>Score : <span id="score-display">0</span></h4>
+            </div>
+        </section>
+    </div>
 
-        <div class="form-group">
-            <label for="theme">Thème des questions :</label>
-            <select id="theme" required>
-                <option value="">--Choisissez un thème--</option>
-                <option value="informatique">Informatique</option>
-                <option value="culture-generale">Culture Générale</option>
-                <option value="mathematiques">Mathématiques</option>
-                <option value="histoire-geo">Histoire-Géo</option>
-            </select>
-        </div>
-
-        <button type="submit">Lancer la session</button>
-    </form>
-</section>
-<section id="display-section">
-    <div class="score-card">
-        <h3>Session en cours</h3>
-        <p>Utilisateur : <span id="display-user">-</span></p>
-        <p>Thème : <span id="display-theme">-</span></p>
-        <div class="score-zone">
-            <h4>Score : <span id="score-display">0</span></h4>
-        </div>
-    </div>
-    
-    <div class="result-zone">
-        <h3>Historique des résultats</h3>
-        <ul id="results-list">
-            </ul>
-    </div>
-</section>
-            </main>
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>
