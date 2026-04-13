@@ -7,3 +7,67 @@
     <link href="https://fonts.googleapis.com/css2?family=Syne:wqht@400;700;800&family=DM+Mono:wght@400;500;&display=swap" rel="stylesheet" />
     <link rel="stysheet" href="style.css" />
   </head>
+<body>
+<div id="app">
+  <div class="card" id="quiz-card">
+
+    <div id="quiz-screen">
+      <div class="quiz-header">
+        <div>
+          <div class="quiz-label">Quiz interactif</div>
+          <div class="quiz-title" id="quiz-title">Culture Générale</div>
+        </div>
+        <div class="timer-ring" id="timer-ring">
+          <svg viewBox="0 0 56 56">
+            <circle class="timer-bg" cx="28" cy="28" r="26"/>
+            <circle class="timer-fg" id="timer-arc" cx="28" cy="28" r="26"/>
+          </svg>
+          <div class="timer-text" id="timer-text">15</div>
+        </div>
+      </div>
+
+      <div class="progress-bar">
+        <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+      </div>
+
+      <div id="score-zone">
+        <div class="score-pill">
+          <div class="score-pill-label">Bonnes</div>
+          <div class="score-pill-value correct-c" id="live-correct">0</div>
+        </div>
+        <div class="score-pill">
+          <div class="score-pill-label">Fausses</div>
+          <div class="score-pill-value wrong-c" id="live-wrong">0</div>
+        </div>
+        <div class="score-pill">
+          <div class="score-pill-label">Score</div>
+          <div class="score-pill-value pct-c" id="live-pct">0%</div>
+        </div>
+      </div>
+
+      <div id="question-text"></div>
+      <div id="options-container"></div>
+      <div id="feedback"></div>
+
+      <div class="nav-row">
+        <div class="counter">Question <span id="q-current">1</span> / <span id="q-total">?</span></div>
+        <button class="btn btn-primary" id="next-btn" style="display:none">Suivant →</button>
+      </div>
+    </div>
+
+    <div id="result-screen">
+      <div class="result-emoji" id="result-emoji">🏆</div>
+      <div class="result-title" id="result-title">Bravo !</div>
+      <div class="result-score" id="result-score">0%</div>
+      <div class="result-sub" id="result-sub"></div>
+      <div class="result-badges" id="result-badges"></div>
+      <button class="btn btn-primary" id="restart-btn">↩ Recommencer</button>
+    </div>
+
+  </div>
+</div>
+
+<script type="module" src="data.js"></script>
+<script type="module" src="main.js"></script>
+</body>
+</html>
