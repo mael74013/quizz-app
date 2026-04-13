@@ -18,7 +18,8 @@ form.addEventListener('submit', async (e) => {
     
     // Simulation d'appel API (Open Trivia DB)
     // On peut adapter l'URL selon le thème choisi
-    const url = `https://opentdb.com/api.php?amount=10&type=multiple`;
+    // Nouvelle URL pour des questions en français
+const url = `https://opentdb.com/api.php?amount=10&category=${theme}&difficulty=${level}&type=multiple`;
     
     try {
         const response = await fetch(url);
