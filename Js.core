@@ -1,6 +1,6 @@
 const DOMAINS = {
   geographie: {
-    label: "Géographie", icon: "",
+    label: "Géographie", 
     questions: [
       { question: "Quelle est la capitale de l'Australie ?", options: ["Sydney", "Melbourne", "Canberra", "Brisbane"], answer: 2 },
       { question: "Quel est le plus grand océan du monde ?", options: ["Atlantique", "Indien", "Arctique", "Pacifique"], answer: 3 },
@@ -9,7 +9,7 @@ const DOMAINS = {
     ]
   },
   histoire: {
-    label: "Histoire", icon: "",
+    label: "Histoire",
     questions: [
       { question: "En quelle année a eu lieu la Révolution française ?", options: ["1776", "1789", "1804", "1815"], answer: 1 },
       { question: "En quelle année l'homme a-t-il marché sur la Lune ?", options: ["1965", "1967", "1969", "1971"], answer: 2 },
@@ -18,7 +18,7 @@ const DOMAINS = {
     ]
   },
   sciences: {
-    label: "Sciences", icon: "🔬",
+    label: "Sciences",
     questions: [
       { question: "Quel élément chimique a le symbole 'Au' ?", options: ["Argent", "Aluminium", "Or", "Azote"], answer: 2 },
       { question: "Quel organe produit l'insuline ?", options: ["Le foie", "Le pancréas", "Les reins", "L'estomac"], answer: 1 },
@@ -27,7 +27,7 @@ const DOMAINS = {
     ]
   },
   mathematiques: {
-    label: "Mathématiques", icon: "",
+    label: "Mathématiques",
     questions: [
       { question: "Combien de côtés possède un dodécagone ?", options: ["10", "11", "12", "14"], answer: 2 },
       { question: "Quel est le résultat de √144 ?", options: ["10", "11", "12", "14"], answer: 2 },
@@ -36,7 +36,7 @@ const DOMAINS = {
     ]
   },
   sport: {
-    label: "Sport", icon: "",
+    label: "Sport",
     questions: [
       { question: "Quel pays a remporté la Coupe du Monde 2018 ?", options: ["Brésil", "Allemagne", "France", "Croatie"], answer: 2 },
       { question: "Combien de joueurs compte une équipe de basket sur le terrain ?", options: ["4", "5", "6", "7"], answer: 1 },
@@ -45,7 +45,7 @@ const DOMAINS = {
     ]
   },
   informatique: {
-    label: "Informatique", icon: "",
+    label: "Informatique",
     questions: [
       { question: "Que signifie 'HTTP' ?", options: ["HyperText Transfer Protocol", "High Text Transfer Process", "HyperText Tracking Program", "Host Transfer Text Protocol"], answer: 0 },
       { question: "Quel est le résultat de 2^10 ?", options: ["512", "1024", "2048", "256"], answer: 1 },
@@ -54,7 +54,7 @@ const DOMAINS = {
     ]
   },
   culture: {
-    label: "Culture & Arts", icon: "",
+    label: "Culture & Arts",
     questions: [
       { question: "Qui a peint la Joconde ?", options: ["Raphaël", "Michel-Ange", "Caravage", "Léonard de Vinci"], answer: 3 },
       { question: "Qui a écrit 'Les Misérables' ?", options: ["Émile Zola", "Gustave Flaubert", "Victor Hugo", "Albert Camus"], answer: 2 },
@@ -63,7 +63,7 @@ const DOMAINS = {
     ]
   },
   planetes: {
-    label: "Planètes", icon: "",
+    label: "Planètes",
     questions: [
       { question: "Quelle planète est la plus proche du Soleil ?", options: ["Vénus", "Mercure", "Mars", "Terre"], answer: 1 },
       { question: "Quelle est la plus grande planète du système solaire ?", options: ["Saturne", "Neptune", "Jupiter", "Uranus"], answer: 2 },
