@@ -5,7 +5,7 @@ Quizz App est une application de quiz intéractive ou nous avons mis en avant l'
 * Le HTML
 * Le CSS
 * Le java script
-Notre application à été développer dans github pour nous permettre un travail plus facile et egalement un assemblage de nos idées et compétences chacune. Le travail comporte sur github 7 branches et plus de 20 commits.
+Notre application à été développer dans github pour nous permettre un travail plus facile et egalement un assemblage de nos idées et compétences chacune. Le travail comporte sur github 7 branches et plus de 30 commits.
 
 ## Repartition du travail
 Les taches ont été diviser comme suites:
